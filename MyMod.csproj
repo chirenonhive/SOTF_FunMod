@@ -33,8 +33,14 @@
       <Reference Include="UnityEngine">
         <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.dll</HintPath>
       </Reference>
+      <Reference Include="UnityEngine.AnimationModule">
+        <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\_RedLoader\Game\UnityEngine.AnimationModule.dll</HintPath>
+      </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>$(GameDir)\_RedLoader\Game\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\_RedLoader\Game\UnityEngine.PhysicsModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 
@@ -43,6 +49,10 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
         <None Remove="ReleaseBuild\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="H.InputSimulator" Version="1.4.1" />
     </ItemGroup>
 
 </Project>
